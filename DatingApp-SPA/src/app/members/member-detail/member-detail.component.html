@@ -46,8 +46,8 @@
             <p>{{user.interests}}</p>
           </tab>
           <tab heading="Photos">
-            <div *ngFor="let photo of user.photos">
-              <img [src]="photo.url" [alt]="photo.description">
+            <div *ngFor="let photo of user.photos" class="imgDiv">
+              <img [src]="photo.url" [alt]="photo.description" class="img-thumbnail">
             </div>
           </tab>
           <tab heading="Messages">

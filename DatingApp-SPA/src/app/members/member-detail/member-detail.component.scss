@@ -1,9 +1,11 @@
 .img-thumbnail {
-    margin: 25px;
-    width: 85%;
-    height: 85%;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
 }
-
+.imgDiv {
+    display: inline;
+}
 .card-body {
     padding: 0 25px;
 }
