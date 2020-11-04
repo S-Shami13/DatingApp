@@ -28,6 +28,8 @@ import { MemberEditResolver } from './_resolvers/member-edit-resolver';
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { TimeagoModule } from 'ngx-timeago';
+
 
 
 
@@ -61,6 +63,7 @@ export function tokenGetter() {
     FileUploadModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
+    TimeagoModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     JwtModule.forRoot({
       config: {
